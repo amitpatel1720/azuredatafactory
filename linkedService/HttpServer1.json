@@ -3,13 +3,14 @@
 	"properties": {
 		"parameters": {
 			"fileName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "sets.csv.gz"
 			}
 		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://cdn.rebrickable.com/media/downloads/",
+			"url": "https://cdn.rebrickable.com/media/downloads/$(fileName)",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
